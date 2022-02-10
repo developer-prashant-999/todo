@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+  width: 100vw;
+  color: white;
+  margin-top: -10px;
+  font-family: "Quintessential", cursive;
+  font-size: 22px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

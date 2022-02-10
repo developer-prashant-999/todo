@@ -1,0 +1,83 @@
+.body {
+  background-color: black;
+  flex-direction: column;
+  min-height: 91vh;
+  min-width: 100vw;
+  margin-top: -25px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  /* padding-bottom: -20px; */
+  /* margin-bottom: 20px; */
+}
+.additem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.b1 {
+  display: flex;
+  padding: 5px;
+  font-size: 20px;
+  width: 200px;
+  min-height: 10px;
+  border-radius: 18px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.input__task {
+  min-width: 50vw;
+  min-height: 5vh;
+  border-radius: 18px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+.show {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-left: 32px;
+  justify-content: space-evenly;
+}
+.h3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  width: 40vw;
+  border: 1mm solid aqua;
+  /* background-color: blueviolet; */
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  border-radius: 18px;
+  margin-right: 10px;
+  /* border: 2mm solid black; */
+  margin-bottom: 10px;
+  overflow: hidden;
+  z-index: 10;
+  /* background: linear-gradient(red, blue, green, yellow); */
+}
+.h3::before {
+  color: white;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 490%;
+  animation: animate 4s linear infinite;
+  background: linear-gradient(red, blue, green, yellow);
+  z-index: -10;
+}
+.h3::after {
+  color: white;
+  position: absolute;
+  content: "";
+  z-index: -10;
+  inset: 6px;
+  background-color: black;
+}
